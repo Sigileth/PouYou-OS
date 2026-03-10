@@ -25,6 +25,7 @@ modules:
       packages:
         - gwenview
         - okular
+        - openrgb
        # - steam
     remove:
       packages:
@@ -34,8 +35,7 @@ modules:
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
         - plasma-discover
         - plasma-welcome
-        - plasma-welcome-fedora
-
+        
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
@@ -60,7 +60,7 @@ modules:
           - org.freedesktop.Platform.VulkanLayer.MangoHud/x86_64/25.08
           - io.github.radiolamp.mangojuice
           - com.github.AmatCoder.mednaffe
-          - org.openrgb.OpenRGB
+         # - org.openrgb.OpenRGB
           - net.pcsx2.PCSX2
           - org.ppsspp.PPSSPP
           - com.system76.Popsicle
