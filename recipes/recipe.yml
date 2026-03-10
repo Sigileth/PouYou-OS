@@ -25,7 +25,7 @@ modules:
       packages:
         - repo: fedora
           packages:
-            -openrgb
+            - openrgb
         - gwenview
         - okular
       # - steam
