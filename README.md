@@ -1,10 +1,12 @@
 # PouYou-OS &nbsp; [![bluebuild build badge](https://github.com/sigileth/pouyou-os/actions/workflows/build.yml/badge.svg)](https://github.com/sigileth/pouyou-os/actions/workflows/build.yml)
 
-Base: Fedora Kinoite
+Base: Fedora Kinoite.
 
-Added packages in image: Okular and gwenview
+Added packages in image: Okular and gwenview.
 
-My choice of programs installed as flatpaks
+Openrgb udev rules.
+
+My choice of programs installed as flatpaks.
 
 ## Installation
 
