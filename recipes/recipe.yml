@@ -18,18 +18,17 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
-    repos:
-      copr:
-        disable:
-          - ublue-os/akmods
-     # files:
+  #  repos:
+    # files:
       #  - https://negativo17.org/repos/fedora-steam.repo
     install:
       packages:
+        - repo: fedora-43
+          packages:
+            -openrgb
         - gwenview
         - okular
-        - openrgb
-       # - steam
+      # - steam
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
