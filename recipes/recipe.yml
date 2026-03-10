@@ -18,9 +18,9 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
-  repos:
-    files:
-    - https://negativo17.org/repos/fedora-steam.repo
+    repos:
+      files:
+        - https://negativo17.org/repos/fedora-steam.repo
     install:
       packages:
         - gwenview
