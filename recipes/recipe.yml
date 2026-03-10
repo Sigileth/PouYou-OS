@@ -21,7 +21,7 @@ modules:
     repos:
       copr:
         disable:
-          - ublue-os:akmods
+          - ublue-os/akmods
      # files:
       #  - https://negativo17.org/repos/fedora-steam.repo
     install:
