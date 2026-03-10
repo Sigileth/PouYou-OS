@@ -23,7 +23,7 @@ modules:
       #  - https://negativo17.org/repos/fedora-steam.repo
     install:
       packages:
-        - repo: fedora
+        - repo: updates  #replace with fedora if upgrade to 44
           packages:
             - openrgb
         - gwenview
