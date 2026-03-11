@@ -2,9 +2,7 @@
 
 Base: Fedora Kinoite.
 
-Added packages in image: Okular and gwenview.
-
-Openrgb udev rules.
+Added packages in image: Okular, gwenview and openrgb.
 
 My choice of programs installed as flatpaks.
 
