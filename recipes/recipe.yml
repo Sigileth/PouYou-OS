@@ -23,11 +23,12 @@ modules:
       #  - https://negativo17.org/repos/fedora-steam.repo
     install:
       packages:
-        - repo: fedora
+        - repo: updates
           packages:
             - openrgb
         - gwenview
         - okular
+        - hidapi
       # - steam
     remove:
       packages:
