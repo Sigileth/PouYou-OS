@@ -23,16 +23,16 @@ modules:
       #  - https://negativo17.org/repos/fedora-steam.repo
     install:
       packages:
-        - repo: updates
+        - repo: updates  #pulling from updates to get latest version, when moving to 44 change back to fedora. 
           packages:
             - openrgb
         - gwenview
         - okular
-        - hidapi
+        - hidapi  #dependency for openrgb
       # - steam
     remove:
       packages:
-        # example: removing firefox (in favor of the flatpak)
+        # example: removing firefox
         # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
@@ -63,7 +63,6 @@ modules:
           - org.freedesktop.Platform.VulkanLayer.MangoHud/x86_64/25.08
           - io.github.radiolamp.mangojuice
           - com.github.AmatCoder.mednaffe
-         # - org.openrgb.OpenRGB
           - net.pcsx2.PCSX2
           - org.ppsspp.PPSSPP
           - com.system76.Popsicle
