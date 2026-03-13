@@ -34,6 +34,7 @@ modules:
         - repo: updates  #pulling from updates to get latest version, when moving to 44 change back to fedora. 
           packages:
             - openrgb
+        - fastfetch
         - gwenview
         - okular
         - hidapi  #dependency for openrgb
