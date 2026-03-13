@@ -40,7 +40,7 @@ modules:
         - htop
         - kcharselect
         - kde-connect
-        - kdedebugsettings
+        - kdebugsettings
         - plasma-discover
         - plasma-welcome
         - nvtop
