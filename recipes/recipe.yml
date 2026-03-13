@@ -18,6 +18,7 @@ modules:
       ID: pouyou-os
       NAME: PouYou-OS
       PRETTY_NAME: PouYou-OS
+      DEFAULT_HOSTNAME: PouYou-OS
       
   - type: files
     files:
