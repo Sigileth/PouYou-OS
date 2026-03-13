@@ -37,11 +37,14 @@ modules:
         - fcitx5
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - firewall-config
         - htop
         - kcharselect
         - kde-connect
         - kdebugsettings
+        - krfb
         - plasma-discover
+        - plasma-drkonqi
         - plasma-welcome
         - nvtop
         
