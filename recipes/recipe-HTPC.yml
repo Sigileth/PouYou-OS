@@ -1,1 +1,76 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+# image will be published to ghcr.io/<user>/<name>
+name: pouyou-os-htpc
+# description will be included in the image's metadata
+description: This is my personal HTPC OS image.
 
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/kinoite-main
+image-version: 43 # latest is also supported if you want new updates ASAP
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+  - type: os-release
+    properties:
+      ID_LIKE: fedora
+      ID: pouyou-os
+      NAME: PouYou-OS
+      PRETTY_NAME: PouYou-OS
+      DEFAULT_HOSTNAME: PouYou-OS
+      
+  - type: files
+    files:
+      - source: system
+        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: dnf
+    install:
+      packages:
+        - gwenview
+        - okular
+              
+    remove:
+      packages:
+        # example: removing firefox
+        # "firefox" is the main package, "firefox-langpacks" is a dependency
+        - fcitx5
+        - firefox
+        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - firewall-config
+        - htop
+        - kcharselect
+        - kde-connect
+        - kdebugsettings
+        - krfb
+        - plasma-discover
+        - plasma-drkonqi
+        - plasma-welcome
+        - nvtop
+        
+        
+  - type: default-flatpaks
+    configurations:
+      - notify: true # Send notification after install/uninstall is finished (true/false)
+        scope: system
+        # If no repo information is specified, Flathub will be used by default
+        install: # system flatpaks we want all users to have and not remove
+          - cafe.avery.Delfin
+          - org.dupot.easyflatpak
+          - com.github.tchx84.Flatseal
+          - org.kde.kcalc
+          - io.gitlab.librewolf-community
+          - com.github.AmatCoder.mednaffe
+          - net.pcsx2.PCSX2
+          - org.ppsspp.PPSSPP
+          - com.vysp3r.ProtonPlus
+          - com.github.Matoking.protontricks
+          - net.rpcs3.RPCS3
+          - com.valvesoftware.Steam
+          - org.strawberrymusicplayer.strawberry
+          - org.videolan.VLC
+          - io.github.flattool.Warehouse
+      - scope: user # Also add Flathub user repo, but no user packages
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
