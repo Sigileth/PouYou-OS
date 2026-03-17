@@ -48,6 +48,11 @@ modules:
         - plasma-drkonqi
         - plasma-welcome
         - nvtop
+        - vim-common
+        - vim-data
+        - vim-enhanced
+        - vim-filesystem
+        - vim-minimal
         
         
   - type: default-flatpaks
