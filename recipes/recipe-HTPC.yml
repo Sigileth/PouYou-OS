@@ -53,6 +53,7 @@ modules:
         - vim-enhanced
         - vim-filesystem
         - vim-minimal
+        - xxd
         
         
   - type: default-flatpaks
