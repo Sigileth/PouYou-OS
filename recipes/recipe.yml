@@ -67,10 +67,10 @@ modules:
         - vim-filesystem
         - vim-minimal
         - xxd
-   group-install:
-     with-optional: true
-     packages:
-       - virtualization
+    group-install:
+      with-optional: true
+      packages:
+        - virtualization
         
         
         
