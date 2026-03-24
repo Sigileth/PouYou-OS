@@ -28,12 +28,11 @@ modules:
   - type: files
     files:
       - source: pouyou
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+        destination: / # copies files/pouyou/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
-  #  repos:
-    # files:
-      #  - https://negativo17.org/repos/fedora-steam.repo
+    repos:
+      nonfree: rpmfusion
     install:
       packages:
         - repo: updates  #pulling from updates to get latest version, when moving to 44 change back to fedora. 
@@ -43,7 +42,7 @@ modules:
         - gwenview
         - okular
         - hidapi  #dependency for openrgb
-      # - steam
+        - steam
     remove:
       packages:
         # example: removing firefox
@@ -104,7 +103,7 @@ modules:
           - com.github.Matoking.protontricks
           - net.rpcs3.RPCS3
           - io.github.mfat.sshpilot
-          - com.valvesoftware.Steam
+         # - com.valvesoftware.Steam
           - org.strawberrymusicplayer.strawberry
           - org.videolan.VLC
           - dev.vencord.Vesktop
