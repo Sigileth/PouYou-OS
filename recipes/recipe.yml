@@ -32,7 +32,7 @@ modules:
 
   - type: dnf
     repos:
-      nonfree: rpmfusion
+      nonfree: negativo17
     install:
       packages:
         - repo: updates  #pulling from updates to get latest version, when moving to 44 change back to fedora. 
