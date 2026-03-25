@@ -95,7 +95,7 @@ modules:
           - org.kde.kronometer
           - org.libreoffice.LibreOffice
           - io.gitlab.librewolf-community
-          - org.freedesktop.Platform.VulkanLayer.MangoHud/x86_64/25.08
+         # - org.freedesktop.Platform.VulkanLayer.MangoHud/x86_64/25.08
           - io.github.radiolamp.mangojuice
           - com.github.AmatCoder.mednaffe
           - net.pcsx2.PCSX2
