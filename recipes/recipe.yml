@@ -72,7 +72,10 @@ modules:
       packages:
         - virtualization
         
-        
+  - type: systemd
+    system:
+      enabled:
+        - libvirtd.service
         
   - type: default-flatpaks
     configurations:
