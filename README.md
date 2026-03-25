@@ -2,7 +2,7 @@
 
 Base: Fedora Kinoite.
 
-Added packages in image: Okular, gwenview and openrgb.
+Added packages in image: Okular, gwenview, steam, mangohud and openrgb.
 
 My choice of programs installed as flatpaks.
 
