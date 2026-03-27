@@ -49,6 +49,7 @@ modules:
         # example: removing firefox
         # "firefox" is the main package, "firefox-langpacks" is a dependency
         - fcitx5
+        - fcitx5-libs
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
         - firewall-config
