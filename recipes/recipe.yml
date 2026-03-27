@@ -99,9 +99,10 @@ modules:
           - org.kde.kronometer
           - org.libreoffice.LibreOffice
           - io.gitlab.librewolf-community
-         # - org.freedesktop.Platform.VulkanLayer.MangoHud/x86_64/25.08
           - io.github.radiolamp.mangojuice
           - com.github.AmatCoder.mednaffe
+          - org.openmw.OpenMW
+          - io.github.berarma.Oversteer
           - net.pcsx2.PCSX2
           - org.ppsspp.PPSSPP
           - com.system76.Popsicle
