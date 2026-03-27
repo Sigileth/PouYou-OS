@@ -113,6 +113,7 @@ modules:
           - org.strawberrymusicplayer.strawberry
           - org.videolan.VLC
           - dev.vencord.Vesktop
+          - com.vivaldi.Vivaldi
           - io.github.flattool.Warehouse
       - scope: user # Also add Flathub user repo, but no user packages
 
