@@ -72,6 +72,10 @@ modules:
       with-optional: true
       packages:
         - virtualization
+
+  - type: script
+    snippets:
+      - "plymouth-set-default-theme text"
         
   - type: systemd
     system:
@@ -116,5 +120,7 @@ modules:
           - com.vivaldi.Vivaldi
           - io.github.flattool.Warehouse
       - scope: user # Also add Flathub user repo, but no user packages
+
+  - type: initramfs    
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
