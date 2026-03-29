@@ -1,6 +1,6 @@
 # PouYou-OS &nbsp; [![bluebuild build badge](https://github.com/sigileth/pouyou-os/actions/workflows/build.yml/badge.svg)](https://github.com/sigileth/pouyou-os/actions/workflows/build.yml)
 
-Base: Fedora Kinoite.
+Base: Aurora.
 
 Added packages in image: Okular, gwenview, steam, mangohud and openrgb.
 
