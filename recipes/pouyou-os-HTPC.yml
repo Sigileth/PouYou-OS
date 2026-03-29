@@ -41,6 +41,7 @@ modules:
         - htop
         - kde-connect
         - kdebugsettings
+        - krfb
         - plasma-discover
         - plasma-drkonqi
         - plasma-welcome
