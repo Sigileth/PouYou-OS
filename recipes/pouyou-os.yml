@@ -41,9 +41,10 @@ modules:
             - openrgb
         - fastfetch
         - gwenview
+        - hidapi  #dependency for openrgb
         - mangohud
         - okular
-        - hidapi  #dependency for openrgb
+        - plymouth-plugin-script
         - steam
     remove:
       packages:
