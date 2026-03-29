@@ -47,12 +47,15 @@ modules:
         - steam
     remove:
       packages:
+        - firefox
+        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
         - htop
         - kde-connect
         - kdebugsettings
         - plasma-discover
         - plasma-drkonqi
         - plasma-welcome
+        - maria-db
         - nvtop
         - vim-common
         - vim-data
