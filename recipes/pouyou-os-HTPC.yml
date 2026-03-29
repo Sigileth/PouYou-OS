@@ -6,7 +6,7 @@ name: pouyou-os-htpc
 description: This is my personal HTPC OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/ublue-os/aurora
 image-version: 43 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -19,6 +19,7 @@ modules:
       NAME: PouYou-OS
       PRETTY_NAME: PouYou-OS
       DEFAULT_HOSTNAME: PouYou-OS
+      HOME_URL: https://github.com/Sigileth/PouYou-OS
       
   - type: files
     files:
@@ -35,15 +36,9 @@ modules:
       packages:
         # example: removing firefox
         # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - fcitx5
-        - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-        - firewall-config
         - htop
-        - kcharselect
         - kde-connect
         - kdebugsettings
-        - krfb
         - plasma-discover
         - plasma-drkonqi
         - plasma-welcome
@@ -80,7 +75,6 @@ modules:
           - com.valvesoftware.Steam
           - org.strawberrymusicplayer.strawberry
           - org.videolan.VLC
-          - io.github.flattool.Warehouse
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: initramfs    
