@@ -40,13 +40,11 @@ modules:
         #  packages:
         - fastfetch
         - gwenview
-        - hidapi  #dependency for openrgb
         - mangohud
         - okular
         - openrgb
         - plymouth-plugin-script  
         - steam
-        - sunshine
     remove:
       packages:
         - firefox
