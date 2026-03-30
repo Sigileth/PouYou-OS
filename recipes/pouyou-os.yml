@@ -38,14 +38,15 @@ modules:
       packages:
         #- repo: updates  #pulling from updates to get latest version, when moving to 44 change back to fedora. 
         #  packages:
-        - openrgb
         - fastfetch
         - gwenview
         - hidapi  #dependency for openrgb
         - mangohud
         - okular
+        - openrgb
         - plymouth-plugin-script  
         - steam
+        - sunshine
     remove:
       packages:
         - firefox
