@@ -32,11 +32,13 @@ modules:
         destination: / # copies files/pouyou/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
+    repos:
+      nonfree: negativo17
     install:
       packages:
-        - repo: updates  #pulling from updates to get latest version, when moving to 44 change back to fedora. 
-          packages:
-            - openrgb
+        #- repo: updates  #pulling from updates to get latest version, when moving to 44 change back to fedora. 
+        #  packages:
+        - openrgb
         - fastfetch
         - gwenview
         - hidapi  #dependency for openrgb
