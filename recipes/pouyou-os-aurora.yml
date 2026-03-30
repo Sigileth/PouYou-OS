@@ -38,7 +38,6 @@ modules:
       packages:
         #- repo: updates  #pulling from updates to get latest version, when moving to 44 change back to fedora. 
         #  packages:
-        - fastfetch
         - gwenview
         - mangohud
         - okular
@@ -50,7 +49,6 @@ modules:
         - htop
         - kde-connect
         - kdebugsettings
-        - krfb
         - nvtop
         - plasma-discover
         - plasma-drkonqi
