@@ -31,6 +31,7 @@ modules:
       packages:
         - gwenview
         - okular
+        - plymouth-plugin-script  
               
     remove:
       packages:
@@ -55,7 +56,7 @@ modules:
 
   - type: script
     snippets:
-      - "plymouth-set-default-theme text"
+      - "plymouth-set-default-theme pisi-color"
         
         
   - type: default-flatpaks
