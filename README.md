@@ -1,6 +1,6 @@
 # PouYou-OS &nbsp; [![bluebuild build badge](https://github.com/sigileth/pouyou-os/actions/workflows/build.yml/badge.svg)](https://github.com/sigileth/pouyou-os/actions/workflows/build.yml)
 
-Base: Kinoite.
+Base: Kinoite: ghcr.io/blue-build/base-images/fedora-kinoite
 
 Added packages in image: Okular, gwenview, steam, mangohud and openrgb.
 
