@@ -40,13 +40,16 @@ modules:
         - repo: updates  #pulling from updates to get latest version, when moving to 44 change back to fedora. 
           packages:
             - openrgb
+        - repo: terra
+          packages:
+            - steam
+            - mesa
         - fastfetch
         - gwenview
         - hidapi  #dependency for openrgb
         - mangohud
         - okular
-        - plymouth-plugin-script
-        - steam
+        - plymouth-plugin-script        
     remove:
       packages:
         - firefox
