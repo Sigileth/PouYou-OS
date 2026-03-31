@@ -36,8 +36,6 @@ modules:
       nonfree: negativo17
     install:
       packages:
-        #- repo: updates  #pulling from updates to get latest version, when moving to 44 change back to fedora. 
-        #  packages:
         - gwenview
         - mangohud
         - okular
@@ -67,6 +65,7 @@ modules:
   - type: script
     snippets:
       - "plymouth-set-default-theme pisi-color"
+      - "rm /etc/profile.d/ublue-fastfetch.sh" # remove fastfetch aliases
              
   - type: systemd
     system:
