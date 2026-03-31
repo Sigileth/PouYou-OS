@@ -34,9 +34,6 @@ modules:
   - type: dnf
     repos:
       nonfree: negativo17
-      copr:
-        - name: lizardbyte/stable
-          chroot: fedora-43-x86_64
     install:
       packages:
         #- repo: updates  #pulling from updates to get latest version, when moving to 44 change back to fedora. 
@@ -48,7 +45,6 @@ modules:
         - openrgb
         - plymouth-plugin-script  
         - steam
-        - Sunshine
     remove:
       packages:
         - firefox
