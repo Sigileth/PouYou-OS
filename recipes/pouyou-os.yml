@@ -48,7 +48,7 @@ modules:
         - openrgb
         - plymouth-plugin-script  
         - steam
-        - sunshine
+        - Sunshine
     remove:
       packages:
         - firefox
