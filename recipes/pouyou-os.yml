@@ -34,6 +34,8 @@ modules:
   - type: dnf
     repos:
       nonfree: negativo17
+      copr:
+        - lizardbyte/stable
     install:
       packages:
         #- repo: updates  #pulling from updates to get latest version, when moving to 44 change back to fedora. 
@@ -45,6 +47,7 @@ modules:
         - openrgb
         - plymouth-plugin-script  
         - steam
+        - sunshine
     remove:
       packages:
         - firefox
