@@ -35,7 +35,8 @@ modules:
     repos:
       nonfree: negativo17
       copr:
-        - lizardbyte/stable
+        - name: lizardbyte/stable
+          chroot: fedora-43-x86_64
     install:
       packages:
         #- repo: updates  #pulling from updates to get latest version, when moving to 44 change back to fedora. 
