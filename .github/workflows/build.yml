@@ -30,6 +30,7 @@ jobs:
           - pouyou-os.yml
           - pouyou-os-HTPC.yml
           - pouyou-os-aurora.yml
+          - pouyou-os-cosmic.yml
                              
     steps:
       # the build is fully handled by the reusable github action
