@@ -65,7 +65,7 @@ modules:
 
   - type: script
     snippets:
-      - "plymouth-set-default-theme pisi-color"
+      - "plymouth-set-default-theme pouyou"
       - "rm /etc/profile.d/ublue-fastfetch.sh" # remove fastfetch aliases
              
   - type: systemd

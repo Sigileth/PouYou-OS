@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=pouyou
+Description=A Plymouth theme for PouYou-OS.
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes//pouyou
+ScriptFile=/usr/share/plymouth/themes//pouyou/pouyou.script

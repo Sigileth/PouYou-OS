@@ -56,7 +56,7 @@ modules:
 
   - type: script
     snippets:
-      - "plymouth-set-default-theme pisi-color"
+      - "plymouth-set-default-theme pouyou"
         
         
   - type: default-flatpaks
