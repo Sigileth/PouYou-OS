@@ -45,6 +45,7 @@ modules:
     remove:
       packages:
         - htop
+        - kcm_ublue
         - kde-connect
         - kdebugsettings
         - nvtop
