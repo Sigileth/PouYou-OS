@@ -65,6 +65,8 @@ modules:
   - type: script
     snippets:
       - "plymouth-set-default-theme pouyou"
+      - "rm /etc/profile.d/bazzite-neofetch.sh" # remove fastfetch aliases
+      - "rm /etc/profile.d/dnf-dummy.sh" # remove dummy dnf aliases
 
   - type: systemd
     system:
