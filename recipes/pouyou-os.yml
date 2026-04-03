@@ -70,6 +70,8 @@ modules:
   - type: script
     snippets:
       - "plymouth-set-default-theme pouyou"
+    scripts:
+      - mesa.sh
              
   - type: systemd
     system:

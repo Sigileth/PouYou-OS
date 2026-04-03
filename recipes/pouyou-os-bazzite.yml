@@ -43,6 +43,10 @@ modules:
     remove:
       packages:
         - bazaar
+        - bazzite-portal
+        - fw-ectool
+        - fw-fanctrl
+        - framework-system
         - gnome-disk-utility
         - kde-connect
         - kdebugsettings
@@ -51,6 +55,8 @@ modules:
         - lutris
         - nvtop
         - ptyxis
+        - Sunshine
+        - tesseract
         - vim-common
         - vim-data
         - vim-enhanced
@@ -86,10 +92,10 @@ modules:
           - com.github.wwmm.easyeffects
           - org.dupot.easyflatpak
           - io.github.Faugus.faugus-launcher
-        #  - com.github.tchx84.Flatseal
+          - com.github.tchx84.Flatseal
           - fr.handbrake.ghb
           - com.heroicgameslauncher.hgl
-         # - org.kde.kcalc
+          - org.kde.kcalc
           - org.kde.kmahjongg
           - org.kde.kronometer
           - org.libreoffice.LibreOffice
@@ -101,15 +107,15 @@ modules:
           - net.pcsx2.PCSX2
           - org.ppsspp.PPSSPP
           - com.system76.Popsicle
-      #    - com.vysp3r.ProtonPlus
-      #    - com.github.Matoking.protontricks
+          - com.vysp3r.ProtonPlus
+          - com.github.Matoking.protontricks
           - net.rpcs3.RPCS3
           - io.github.mfat.sshpilot
           - org.strawberrymusicplayer.strawberry
           - org.videolan.VLC
           - dev.vencord.Vesktop
           - com.vivaldi.Vivaldi
-       #   - io.github.flattool.Warehouse
+          - io.github.flattool.Warehouse
       - notify: false
         scope: user # Also add Flathub user repo, but no user packages
 
