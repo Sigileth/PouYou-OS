@@ -113,7 +113,8 @@ modules:
           - dev.vencord.Vesktop
           - com.vivaldi.Vivaldi
           - io.github.flattool.Warehouse
-      - scope: user # Also add Flathub user repo, but no user packages
+      - notify: false
+        scope: user # Also add Flathub user repo, but no user packages
 
   - type: initramfs    
 
