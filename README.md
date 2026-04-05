@@ -2,8 +2,8 @@
 
 Base: Kinoite: ghcr.io/blue-build/base-images/fedora-kinoite
 
-Added packages in image: Okular, gwenview, steam, mangohud and openrgb.
-
+Added packages in image: Okular, gwenview, steam, mangohud, git, fastfetch and openrgb.
+Mesa from Terra-mesa repo.
 My choice of programs installed as flatpaks.
 
 ## Installation
