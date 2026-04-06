@@ -50,6 +50,9 @@ modules:
         - steam
     remove:
       packages:
+        - apr
+        - apr-util
+        - distrobox
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
         - htop
@@ -66,6 +69,7 @@ modules:
         - vim-filesystem
         - vim-minimal
         - xxd
+        - yubikey-manager
 
   - type: script
     snippets:

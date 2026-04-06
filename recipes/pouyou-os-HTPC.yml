@@ -42,6 +42,9 @@ modules:
       packages:
         # example: removing firefox
         # "firefox" is the main package, "firefox-langpacks" is a dependency
+        - apr
+        - apr-util
+        - distrobox
         - firefox
         - firefox-langpacks
         - htop
@@ -58,6 +61,7 @@ modules:
         - vim-filesystem
         - vim-minimal
         - xxd
+        - yubikey-manager
 
   - type: script
     snippets:
