@@ -11,4 +11,8 @@ dnf5 -y install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/te
 echo 'install mesa from terra repo'
 dnf5 -y swap --from-repo=terra-mesa mesa-filesystem mesa-filesystem
 echo 'remove terra repo'
-dnf5 remove terra-gpg-keys terra-release terra-release-extras terra-release-mesa
+dnf5 -y remove \
+    terra-gpg-keys \
+    terra-release \
+    terra-release-extras \
+    terra-release-mesa
