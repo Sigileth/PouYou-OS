@@ -49,6 +49,7 @@ modules:
         - openrgb
         - plymouth-plugin-script  
         - steam
+        - unrar
     remove:
       packages:
         - apr

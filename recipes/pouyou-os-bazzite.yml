@@ -48,26 +48,35 @@ modules:
     remove:
       packages:
         - bazaar
-        - bazzite-portal
+       # - bazzite-portal
+        - btop
         - fw-ectool
         - fw-fanctrl
         - framework-system
-        - gnome-disk-utility
+       # - gnome-disk-utility
         - kde-connect
         - kdebugsettings
         - krdc
         - krfb
-        - lutris
+       # - lutris
         - nvtop
         - ptyxis
+        - stress-ng
         - Sunshine
+        - tailscale
         - tesseract
+        - tesseract-common
         - vim-common
         - vim-data
         - vim-enhanced
         - vim-filesystem
         - vim-minimal
+        - waydroid
+        - webapp-manager
+        #- xdotool
+        - xwiimote-ng
         - xxd
+        #- ydotool
     group-install:
       with-optional: true
       packages:
