@@ -42,6 +42,7 @@ modules:
     install:
       packages:
         - gwenview
+        - kde-partitionmanager
         - okular
         - openrgb
         - plymouth-plugin-script
@@ -50,15 +51,25 @@ modules:
         - bazaar
        # - bazzite-portal
         - btop
+        - cockpit-files
+        - cockpit-networkmanager
+        - cockpit-podman
+        - cockpit-selinux
+        - cockpit-storaged
+        - cockpit-system
         - fw-ectool
         - fw-fanctrl
         - framework-system
-       # - gnome-disk-utility
+        - gnome-disk-utility
         - kde-connect
         - kdebugsettings
         - krdc
         - krfb
-       # - lutris
+        - libobs_glcapture.i686
+        - libobs_glcapture.x86_64
+        - libobs_vkcapture.i686
+        - libobs_vkcapture.x86_64
+        - lutris
         - nvtop
         - ptyxis
         - stress-ng
@@ -71,12 +82,13 @@ modules:
         - vim-enhanced
         - vim-filesystem
         - vim-minimal
+        - vkBasalt
         - waydroid
         - webapp-manager
-        #- xdotool
+        - xdotool
         - xwiimote-ng
         - xxd
-        #- ydotool
+        - ydotool
     group-install:
       with-optional: true
       packages:
