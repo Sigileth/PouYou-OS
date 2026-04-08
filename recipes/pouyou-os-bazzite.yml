@@ -78,7 +78,7 @@ modules:
         - nvtop
         - perl
         - ptyxis
-        - python3
+       # - python3
         - stress-ng
         - Sunshine
         - tailscale
