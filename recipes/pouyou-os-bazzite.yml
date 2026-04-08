@@ -52,49 +52,20 @@ modules:
         - virtualization
     remove:
       packages:
-        - apr
         - bazaar
-        - bazzite-portal
-        - btop
-        - cockpit-files
-        - cockpit-networkmanager
-        - cockpit-podman
-        - cockpit-selinux
-        - cockpit-storaged
-        - cockpit-system
-        - distrobox
         - fw-ectool
         - fw-fanctrl
         - framework-system
         - gnome-disk-utility
-        - kde-connect
         - kdebugsettings
         - krdc
         - krfb
-        - libobs_glcapture
-        - libobs_vkcapture
-        - libwacom-surface
-        - lutris
-        - nvtop
-        - perl
-        - ptyxis
-       # - python3
-        - stress-ng
-        - Sunshine
-        - tailscale
         - vim-common
         - vim-data
         - vim-enhanced
         - vim-filesystem
         - vim-minimal
-        - vkBasalt
-        - waydroid
-        - webapp-manager
-        - xdotool
-        - xwiimote-ng
         - xxd
-        - ydotool
-        - yubikey-manager
 
   - type: script
     snippets:
