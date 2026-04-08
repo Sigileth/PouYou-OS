@@ -77,7 +77,7 @@ modules:
         - stress-ng
         - Sunshine
         - tailscale
-        - tesseract-common
+        #- tesseract-common
         - vim-common
         - vim-data
         - vim-enhanced
