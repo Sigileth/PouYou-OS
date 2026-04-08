@@ -27,12 +27,12 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here
-          - pouyou-os.yml
+         # - pouyou-os.yml
           - pouyou-os-HTPC.yml
           - pouyou-os-novirt.yml
          # - pouyou-os-nvidia.yml
          # - pouyou-os-aurora.yml
-          - pouyou-os-bazzite.yml
+         # - pouyou-os-bazzite.yml
          # -pouyou-os-cosmic.yml
                              
     steps:
