@@ -39,6 +39,9 @@ modules:
   - type: dnf
     repos:
       nonfree: negativo17
+      copr:
+        - ublue-os/bazzite
+        - ublue-os/bazzite-multilib
     install:
       packages:
         - fastfetch
