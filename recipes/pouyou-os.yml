@@ -39,11 +39,6 @@ modules:
   - type: dnf
     repos:
       nonfree: negativo17
-      copr:
-        - name: ublue-os/bazzite
-          chroot: fedora-43-x86_64
-        - name: ublue-os/bazzite-multilib
-          chroot: fedora-43-x86_64
     install:
       packages:
         - fastfetch
