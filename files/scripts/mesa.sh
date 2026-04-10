@@ -10,6 +10,7 @@ echo 'install terra repo'
 dnf5 -y install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release{,-extras,-mesa}
 echo 'install mesa from terra repo'
 dnf5 -y swap --from-repo=terra-mesa mesa-filesystem mesa-filesystem
+dnf5 -y install ScopeBuddy
 echo 'remove terra repo'
 dnf5 -y remove \
     terra-gpg-keys \
