@@ -72,6 +72,8 @@ modules:
     snippets:
       - "plymouth-set-default-theme pouyou"
       - "rm /etc/profile.d/ublue-fastfetch.sh" # remove fastfetch aliases
+    scripts:
+      - mesa.sh
              
   - type: systemd
     system:

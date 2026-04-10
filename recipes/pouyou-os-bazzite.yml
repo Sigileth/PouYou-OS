@@ -96,6 +96,7 @@ modules:
           - com.heroicgameslauncher.hgl
           - org.kde.kcalc
           - org.kde.kmahjongg
+          - io.github.DenysMb.Kontainer
           - org.kde.kronometer
           - org.libreoffice.LibreOffice
           - io.gitlab.librewolf-community
