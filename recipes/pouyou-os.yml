@@ -33,6 +33,7 @@ modules:
     install:
       packages:
         - fastfetch
+        - gamescope
         - git
         - gwenview
         - mangohud
@@ -75,7 +76,6 @@ modules:
       - "plymouth-set-default-theme pouyou"
     scripts:
       - mesa.sh
-      - gamescope.sh
              
   - type: systemd
     system:
