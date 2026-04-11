@@ -60,6 +60,7 @@ modules:
         - kdebugsettings
         - krdc
         - krfb
+        - ptyxis
         - vim-common
         - vim-data
         - vim-enhanced
