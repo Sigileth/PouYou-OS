@@ -3,4 +3,4 @@
 modules:
   - type: script
     scripts:
-      - niri.sh
+      - noctalia.sh
