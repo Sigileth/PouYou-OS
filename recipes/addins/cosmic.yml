@@ -2,13 +2,13 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 modules:
   - type: dnf
-  install:
-    packages:
-    - cosmic-edit
-    - cosmic-files
-    - cosmic-initial-setup
-    - cosmic-player
-    - cosmic-session
-    - cosmic-store
-    - cosmic-term
-    - system-config-printer
+    install:
+      packages:
+      - cosmic-edit
+      - cosmic-files
+      - cosmic-initial-setup
+      - cosmic-player
+      - cosmic-session
+      - cosmic-store
+      - cosmic-term
+      - system-config-printer
