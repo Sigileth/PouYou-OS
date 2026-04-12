@@ -1,7 +1,7 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: pouyou-os
+name: pouyou-os-test
 # description will be included in the image's metadata
 description: This is my personal OS image.
 
@@ -60,10 +60,10 @@ modules:
         - vim-minimal
         - xxd
         - yubikey-manager
-    group-install:
-      with-optional: true
-      packages:
-        - virtualization
+
+  - from-file: addins/cosmic.yml
+  - from-file: addins/noctalia.yml
+  - from-file: addins/virt.yml
 
   - type: script
     snippets:
@@ -119,8 +119,8 @@ modules:
 
   - type: os-release
     properties:
-      ID_LIKE: fedora
-      ID: pouyou-os
+     # ID_LIKE: fedora
+     # ID: pouyou-os
       NAME: PouYou-OS
       PRETTY_NAME: PouYou-OS
       DEFAULT_HOSTNAME: PouYou-OS
