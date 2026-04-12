@@ -60,10 +60,10 @@ modules:
         - vim-minimal
         - xxd
         - yubikey-manager
-    group-install:
-      with-optional: true
-      packages:
-        - virtualization
+
+  - from-file: addins/cosmic.yml
+  - from-file: addins/noctalia.yml
+  - from-file: addins/virt.yml
 
   - type: script
     snippets:
@@ -119,8 +119,8 @@ modules:
 
   - type: os-release
     properties:
-      ID_LIKE: fedora
-      ID: pouyou-os
+     # ID_LIKE: fedora
+     # ID: pouyou-os
       NAME: PouYou-OS
       PRETTY_NAME: PouYou-OS
       DEFAULT_HOSTNAME: PouYou-OS
