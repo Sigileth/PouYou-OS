@@ -1,0 +1,42 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+modules:
+  - type: default-flatpaks
+    configurations:
+      - notify: false # Send notification after install/uninstall is finished (true/false)
+        scope: system
+        # If no repo information is specified, Flathub will be used by default
+        install: # system flatpaks we want all users to have and not remove
+          - eu.betterbird.Betterbird
+          - com.usebottles.bottles
+          - io.gitlab.guillermop.Counters
+          - cafe.avery.Delfin
+          - com.github.wwmm.easyeffects
+          - org.dupot.easyflatpak
+          - io.github.Faugus.faugus-launcher
+          - com.github.tchx84.Flatseal
+          - fr.handbrake.ghb
+          - com.heroicgameslauncher.hgl
+          - org.kde.kcalc
+          - org.kde.kmahjongg
+          - org.kde.kronometer
+          - org.libreoffice.LibreOffice
+          - io.gitlab.librewolf-community
+          - io.github.radiolamp.mangojuice
+          - com.github.AmatCoder.mednaffe
+          - org.openmw.OpenMW
+          - io.github.berarma.Oversteer
+          - net.pcsx2.PCSX2
+          - org.ppsspp.PPSSPP
+          - com.system76.Popsicle
+          - com.vysp3r.ProtonPlus
+          - com.github.Matoking.protontricks
+          - net.rpcs3.RPCS3
+          - io.github.mfat.sshpilot
+          - org.strawberrymusicplayer.strawberry
+          - org.videolan.VLC
+          - dev.vencord.Vesktop
+          - com.vivaldi.Vivaldi
+          - io.github.flattool.Warehouse
+      - notify: false
+        scope: user # Also add Flathub user repo, but no user packages

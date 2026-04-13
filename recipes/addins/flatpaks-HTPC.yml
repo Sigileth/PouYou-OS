@@ -1,0 +1,25 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+modules:
+  - type: default-flatpaks
+    configurations:
+      - notify: false # Send notification after install/uninstall is finished (true/false)
+        scope: system
+        # If no repo information is specified, Flathub will be used by default
+        install: # system flatpaks we want all users to have and not remove
+          - cafe.avery.Delfin
+          - org.dupot.easyflatpak
+          - com.github.tchx84.Flatseal
+          - org.kde.kcalc
+          - io.gitlab.librewolf-community
+          - com.github.AmatCoder.mednaffe
+          - net.pcsx2.PCSX2
+          - org.ppsspp.PPSSPP
+          - com.vysp3r.ProtonPlus
+          - com.github.Matoking.protontricks
+          - net.rpcs3.RPCS3
+          - com.valvesoftware.Steam
+          - org.strawberrymusicplayer.strawberry
+          - org.videolan.VLC
+      - notify: false
+        scope: user # Also add Flathub user repo, but no user packages
