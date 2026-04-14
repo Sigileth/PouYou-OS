@@ -22,8 +22,6 @@ modules:
       - source: pouyou
         destination: / # copies files/pouyou/* (* means everything inside it) into your image's root folder /
 
-
-
   - type: dnf
     repos:
       nonfree: negativo17
@@ -59,10 +57,10 @@ modules:
         - yubikey-manager
 
   - from-file: addins/branding.yml
-  - from-file: addins/cosmic.yml
-  - from-file: addins/noctalia.yml
   - from-file: addins/virt.yml
   - from-file: addins/flatpaks.yml
+  #- from-file: addins/cosmic.yml
+  #- from-file: addins/noctalia.yml
 
   - type: script
     scripts:
