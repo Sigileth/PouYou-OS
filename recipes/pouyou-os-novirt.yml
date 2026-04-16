@@ -46,6 +46,9 @@ modules:
         - kdebugsettings
         - krfb
         - nvtop
+        - pam-u2f
+        - pam_yubico
+        - pamu2fcfg
         - plasma-discover
         - plasma-drkonqi
         - plasma-welcome

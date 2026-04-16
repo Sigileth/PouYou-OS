@@ -45,6 +45,9 @@ modules:
         - kde-connect
         - kdebugsettings
         - krfb
+        - pam-u2f
+        - pam_yubico
+        - pamu2fcfg
         - plasma-discover
         - plasma-drkonqi
         - plasma-welcome

@@ -1,6 +1,16 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 modules:
+  - type: script
+    snippets:
+      ## Remove Fedora Look and Feel
+      - rm -rf /usr/share/plasma/look-and-feel/org.fedoraproject.fedora.desktop
+      - rm -rf /usr/share/plasma/look-and-feel/org.fedoraproject.fedoradark.desktop
+      - rm -rf /usr/share/plasma/look-and-feel/org.fedoraproject.fedoralight.desktop
+      ## Remove Fedora Wallpapers
+      - rm /usr/share/wallpapers/Fedora
+      - rm -rf /usr/share/wallpapers/F43
+
   - type: files
     files:
       - source: branding
