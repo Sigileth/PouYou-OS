@@ -51,6 +51,7 @@ modules:
         - plasma-discover
         - plasma-drkonqi
         - plasma-welcome
+        - plasma-workspace-wallpapers
         - vim-common
         - vim-data
         - vim-enhanced
