@@ -42,6 +42,10 @@ modules:
         - kdebugsettings
         - krdc
         - krfb
+        - pam-u2f
+        - pam_yubico
+        - pamu2fcfg
+        - plasma-workspace-wallpapers
         - ptyxis
         - vim-common
         - vim-data
@@ -49,6 +53,7 @@ modules:
         - vim-filesystem
         - vim-minimal
         - xxd
+        - yubikey-manager
 
   - type: script
     snippets:
