@@ -35,23 +35,41 @@ modules:
     remove:
       packages:
         - bazaar
+        - bazzite-portal
+        - cockpit-networkmanager
+        - cockpit-podman
+        - cockpit-selinux
+        - cockpit-system
+        - cockpit-files
+        - cockpit-storaged
+        - distrobox
         - fw-ectool
         - fw-fanctrl
         - framework-system
         - gnome-disk-utility
         - kdebugsettings
+        - kdeconnectd
         - krdc
         - krfb
+        - libobs_glcapture
+        - libobs_vkcapture
+        - lutris
         - pam-u2f
         - pam_yubico
         - pamu2fcfg
         - plasma-workspace-wallpapers
         - ptyxis
+        - Sunshine
+        - tailscale
+        - udica
         - vim-common
         - vim-data
         - vim-enhanced
         - vim-filesystem
         - vim-minimal
+        - waydroid
+        - webapp-manager
+        - xwiimote-ng
         - xxd
         - yubikey-manager
 
