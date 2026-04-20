@@ -22,11 +22,6 @@ modules:
       - source: pouyou
         destination: / # copies files/pouyou/* (* means everything inside it) into your image's root folder /
 
-  - type: files
-    files:
-      - source: branding
-        destination: / # copies files/pouyou/* (* means everything inside it) into your image's root folder /
-
   - type: dnf
     repos:
       nonfree: negativo17
@@ -45,12 +40,16 @@ modules:
       packages:
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - pam-u2f
+        - pam_yubico
+        - pamu2fcfg
         - vim-common
         - vim-data
         - vim-enhanced
         - vim-filesystem
         - vim-minimal
         - xxd
+        - yubikey-manager
 
   - from-file: addins/branding.yml
   - from-file: addins/virt.yml

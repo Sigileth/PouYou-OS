@@ -59,6 +59,7 @@ modules:
         - pamu2fcfg
         - plasma-workspace-wallpapers
         - ptyxis
+        - rom-properties
         - Sunshine
         - tailscale
         - udica
