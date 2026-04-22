@@ -70,6 +70,7 @@ modules:
     scripts:
       - mesa.sh
       - gamescope.sh
+      - kernel.sh
         
   - type: initramfs    
 
