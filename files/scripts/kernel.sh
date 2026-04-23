@@ -22,22 +22,11 @@ popd
 rpm -e --nodeps kernel kernel-headers kernel-core kernel-modules kernel-modules-core kernel-modules-extra kernel-tools kernel-tools-libs
 rm -r -f /usr/lib/modules/*
 
-# Install dnf-plugins-core just in case
-#dnf -y install --setopt=install_weak_deps=False \
-#    dnf-plugins-core \
-#    dnf5-plugins
-
 # Enable repos
 dnf -y copr enable bieszczaders/kernel-cachyos
 
 # Install CachyOS LTO kernel & akmods
 dnf -y install --setopt=install_weak_deps=False kernel-cachyos
-
-
-# Manually build modules, run depmod
-#VER=$(ls /lib/modules) && \
-#    depmod -a $VER
-
 
 pushd /usr/lib/kernel/install.d
 mv -f 05-rpmostree.install.bak 05-rpmostree.install
