@@ -23,9 +23,9 @@ rpm -e --nodeps kernel kernel-headers kernel-core kernel-modules kernel-modules-
 rm -r -f /usr/lib/modules/*
 
 # Install dnf-plugins-core just in case
-dnf -y install --setopt=install_weak_deps=False \
-    dnf-plugins-core \
-    dnf5-plugins
+#dnf -y install --setopt=install_weak_deps=False \
+#    dnf-plugins-core \
+#    dnf5-plugins
 
 # Enable repos
 dnf -y copr enable bieszczaders/kernel-cachyos

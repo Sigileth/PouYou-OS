@@ -59,7 +59,7 @@ modules:
   - type: script
     scripts:
       - mesa.sh
-             
+
   - from-file: addins/branding.yml
 
   - type: default-flatpaks
