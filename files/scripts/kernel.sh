@@ -31,6 +31,10 @@ dnf5 -y --setopt=tsflags=noscripts install kernel-cachyos
 #dnf -y install --setopt=install_weak_deps=False kernel-cachyos
 dnf -y install --allowerasing cachyos-settings
 
+# Manually build modules, run depmod
+VER=$(ls /lib/modules) && \
+    depmod -a $VER
+
 #pushd /usr/lib/kernel/install.d
 #mv -f 05-rpmostree.install.bak 05-rpmostree.install
 #mv -f 50-dracut.install.bak 50-dracut.install
