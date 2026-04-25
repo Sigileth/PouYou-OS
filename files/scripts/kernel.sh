@@ -29,7 +29,7 @@ dnf -y copr enable bieszczaders/kernel-cachyos-addons
 # Install CachyOS LTO kernel & akmods
 dnf5 -y --setopt=tsflags=noscripts install kernel-cachyos
 #dnf -y install --setopt=install_weak_deps=False kernel-cachyos
-dnf -y install cachyos-settings
+dnf -y install --allowerasing cachyos-settings
 
 #pushd /usr/lib/kernel/install.d
 #mv -f 05-rpmostree.install.bak 05-rpmostree.install
