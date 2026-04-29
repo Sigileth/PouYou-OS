@@ -7,7 +7,7 @@ description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/bazzite
-image-version: stable-43 # latest is also supported if you want new updates ASAP
+image-version: stable-44 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -35,34 +35,18 @@ modules:
     remove:
       packages:
         - bazaar
-        - bazzite-portal
-        - cockpit-networkmanager
-        - cockpit-podman
-        - cockpit-selinux
-        - cockpit-system
-        - cockpit-files
-        - cockpit-storaged
-        - distrobox
         - fw-ectool
         - fw-fanctrl
         - framework-system
         - gnome-disk-utility
         - kdebugsettings
-        - kdeconnectd
         - krdc
         - krfb
-        - libobs_glcapture
-        - libobs_vkcapture
-        - lutris
         - pam-u2f
         - pam_yubico
         - pamu2fcfg
         - plasma-workspace-wallpapers
-        - ptyxis
-        - rom-properties
-        - Sunshine
         - tailscale
-        - udica
         - vim-common
         - vim-data
         - vim-enhanced
