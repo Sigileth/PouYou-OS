@@ -31,7 +31,6 @@ modules:
         - kde-partitionmanager
         - okular
         - openrgb
-        - plymouth-plugin-script
     remove:
       packages:
         - bazaar

@@ -22,8 +22,7 @@ modules:
       packages:
         - gwenview
         - okular
-        - plymouth-plugin-script  
-              
+
     remove:
       packages:
         # example: removing firefox

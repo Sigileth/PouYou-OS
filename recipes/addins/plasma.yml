@@ -10,6 +10,7 @@ modules:
         - breeze-gtk
         - breeze-icon-theme
         - gwenview
+        - kate
         - kcm_systemd
         - kdegraphics-thumbnailers
         - kde-gtk-config

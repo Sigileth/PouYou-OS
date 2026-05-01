@@ -31,7 +31,6 @@ modules:
         - git
         - mangohud
         - openrgb
-        - plymouth-plugin-script
         - p7zip # check if build for 44
         - p7zip-plugins # check if build for 44
         - steam

@@ -32,7 +32,6 @@ modules:
         - mangohud
         - okular
         - openrgb
-        - plymouth-plugin-script  
         - steam
     remove:
       packages:
