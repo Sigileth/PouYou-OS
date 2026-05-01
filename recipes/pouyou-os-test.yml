@@ -34,6 +34,7 @@ modules:
       - mesa.sh
       - gamescope.sh
       - kernel.sh
+      - drivers.sh
 
   - type: initramfs    
 

@@ -12,12 +12,12 @@ QUALIFIED_KERNEL=$(rpm -q --queryformat '%{VERSION}-%{RELEASE}.%{ARCH}\n' kernel
 echo 'install terra repo'
 dnf5 -y install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release{,-extras,-mesa}
 echo 'install gamescope from terra repo'
-dnf5 -y install dkms-zenergy \
-    dkms-xone \
-    dkms-xpadneo \
-    dkms-xpad-noone \
-    xone-firmware \
-    dkms
+dnf5 -y install dkms-zenergy dkms
+   # dkms-xone \
+   # dkms-xpadneo \
+   # dkms-xpad-noone \
+   # xone-firmware \
+
 
 # Build all installed DKMS modules for the installed kernel (if any)
 while IFS=' ' read -r pkg_name pkg_ver; do
