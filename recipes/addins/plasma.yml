@@ -1,0 +1,45 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+modules:
+  - type: dnf
+    install:
+      packages:
+        - bluedevil
+        - bluez
+        - bluez-obexd
+        - breeze-gtk
+        - breeze-icon-theme
+        - gwenview
+        - kcm_systemd
+        - kdegraphics-thumbnailers
+        - kde-gtk-config
+        - kinfocenter
+        - kmenuedit
+        - kscreen
+        - kwalletmanager5
+        - kwin
+        - okular
+        - plasma-browser-integration
+        - plasma-desktop
+        - plasma-login-manager
+        - plasma-nm
+        - plasma-pa
+        - plasma-workspace
+        - plasma-workspace-wayland
+
+modules:
+  - type: dnf
+    remove:
+      packages:
+        - kde-connect
+        - kdebugsettings
+        - krfb
+        - plasma-discover
+        - plasma-drkonqi
+        - plasma-welcome
+        - plasma-workspace-wallpapers
+
+  - type: systemd
+    system:
+      enabled:
+        - plasmalogin.service

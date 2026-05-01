@@ -6,9 +6,19 @@ modules:
       packages:
       - cosmic-edit
       - cosmic-files
+      - cosmic greeter
       - cosmic-initial-setup
       - cosmic-player
       - cosmic-session
       - cosmic-store
       - cosmic-term
       - system-config-printer
+
+  - type: script
+    snippets:
+      - "flatpak remote-add --if-not-exists cosmic https://apt.pop-os.org/cosmic/cosmic.flatpakrepo"
+
+  - type: systemd
+    system:
+      enabled:
+        - cosmic-greeter.service

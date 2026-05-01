@@ -1,13 +1,13 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: pouyou-os
+name: pouyou-os-test
 # description will be included in the image's metadata
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/blue-build/base-images/fedora-kinoite
-image-version: 43 # latest is also supported if you want new updates ASAP
+base-image: quay.io/fedora-ostree-desktops/base-atomic
+image-version: 44 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -22,46 +22,11 @@ modules:
       - source: pouyou
         destination: / # copies files/pouyou/* (* means everything inside it) into your image's root folder /
 
-
-
-  - type: dnf
-    repos:
-      nonfree: negativo17
-    install:
-      packages:
-        - fastfetch
-        - git
-        - gwenview
-        - mangohud
-        - okular
-        - openrgb
-        - plymouth-plugin-script
-        - p7zip # check if build for 44
-        - p7zip-plugins # check if build for 44
-        - steam
-        - unrar
-    remove:
-      packages:
-        - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-        - kde-connect
-        - kdebugsettings
-        - krfb
-        - plasma-discover
-        - plasma-drkonqi
-        - plasma-welcome
-        - vim-common
-        - vim-data
-        - vim-enhanced
-        - vim-filesystem
-        - vim-minimal
-        - xxd
-        - yubikey-manager
-
-  - from-file: addins/branding.yml
-  - from-file: addins/cosmic.yml
-  - from-file: addins/noctalia.yml
+  - from-file: addins/base.yml
+  - from-file: addins/plasma.yml
+  - from-file: addins/packages.yml
   - from-file: addins/virt.yml
+  - from-file: addins/branding.yml
   - from-file: addins/flatpaks.yml
 
   - type: script
