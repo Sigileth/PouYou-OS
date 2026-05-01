@@ -17,7 +17,7 @@ dnf -y copr enable bieszczaders/kernel-cachyos
 dnf -y copr enable bieszczaders/kernel-cachyos-addons
 
 # Install CachyOS LTO kernel & akmods
-dnf5 -y --setopt=tsflags=noscripts install kernel-cachyos
+dnf5 -y --setopt=tsflags=noscripts install kernel-cachyos kernel-cachyos-devel-matched
 dnf -y install --allowerasing cachyos-settings
 
 # Manually build modules, run depmod
