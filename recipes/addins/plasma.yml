@@ -13,8 +13,10 @@ modules:
         - kcm_systemd
         - kdegraphics-thumbnailers
         - kde-gtk-config
+        - kde-partitionmanager
         - kinfocenter
         - kmenuedit
+        - konsole
         - kscreen
         - kwalletmanager5
         - kwin
