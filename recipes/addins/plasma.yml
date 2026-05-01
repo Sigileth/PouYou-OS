@@ -27,7 +27,6 @@ modules:
         - plasma-workspace
         - plasma-workspace-wayland
 
-modules:
   - type: dnf
     remove:
       packages:
