@@ -12,7 +12,7 @@ QUALIFIED_KERNEL=$(rpm -q --queryformat '%{VERSION}-%{RELEASE}.%{ARCH}\n' kernel
 echo 'install terra repo'
 dnf5 -y install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release{,-extras,-mesa}
 echo 'install gamescope from terra repo'
-dnf5 -y --setopt=tsflags=noscripts install dkms-zenergy dkms dkms-xone akmod-xpadneo dkms-xpad-noone xone-firmware akmods
+dnf5 -y --setopt=tsflags=noscripts install dkms-zenergy dkms dkms-xone akmod-xpadneo dkms-xpad-noone xone-firmware dkms-new-lg4ff akmods
 
 mkdir -p /var/log/akmods
 touch /var/log/akmods/akmods.log

@@ -12,15 +12,6 @@ image-version: 44 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: files
-    files:
-      - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-
-  - type: files
-    files:
-      - source: pouyou
-        destination: / # copies files/pouyou/* (* means everything inside it) into your image's root folder /
 
   - from-file: addins/base.yml
   - from-file: addins/plasma.yml
@@ -35,6 +26,16 @@ modules:
       - gamescope.sh
       - kernel.sh
       - drivers.sh
+
+  - type: files
+    files:
+      - source: system
+        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: files
+    files:
+      - source: pouyou
+        destination: / # copies files/pouyou/* (* means everything inside it) into your image's root folder /
 
   - type: initramfs    
 
