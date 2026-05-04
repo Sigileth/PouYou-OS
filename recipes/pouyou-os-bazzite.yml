@@ -31,10 +31,13 @@ modules:
         - kdebugsettings
         - krdc
         - krfb
+        - krunner-bazaar
+        - obs-studio-plugin-vkcapture-hook-libs
         - pam-u2f
         - pam_yubico
         - pamu2fcfg
         - plasma-workspace-wallpapers
+        - rom-properties
         - tailscale
         - vim-common
         - vim-data

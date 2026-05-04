@@ -4,11 +4,13 @@ modules:
   - type: dnf
     install:
       packages:
+        - ark
         - bluedevil
         - bluez
         - bluez-obexd
         - breeze-gtk
         - breeze-icon-theme
+        - dolphin
         - gwenview
         - kate
         - kcm_systemd
@@ -27,8 +29,11 @@ modules:
         - plasma-login-manager
         - plasma-nm
         - plasma-pa
+        - plasma-print-manager
+        - plasma-systemmonitor
         - plasma-workspace
         - plasma-workspace-wayland
+        - spectacle
 
   - type: dnf
     remove:
