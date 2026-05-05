@@ -31,8 +31,7 @@ modules:
         - git
         - mangohud
         - openrgb
-        - p7zip # check if build for 44
-        - p7zip-plugins # check if build for 44
+        - 7zip
         - steam
         - unrar
     remove:

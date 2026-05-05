@@ -6,7 +6,7 @@ modules:
       packages:
       - cosmic-edit
       - cosmic-files
-      - cosmic greeter
+      - cosmic-greeter
       - cosmic-initial-setup
       - cosmic-player
       - cosmic-session

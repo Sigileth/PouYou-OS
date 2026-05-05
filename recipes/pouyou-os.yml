@@ -17,14 +17,13 @@ modules:
       nonfree: negativo17
     install:
       packages:
+        - 7zip
         - fastfetch
         - git
         - gwenview
         - mangohud
         - okular
         - openrgb
-        - p7zip # check if build for 44
-        - p7zip-plugins # check if build for 44
         - steam
         - unrar
     remove:
