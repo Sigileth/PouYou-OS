@@ -7,7 +7,7 @@ description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/blue-build/base-images/fedora-kinoite-nvidia-open
-image-version: 43 # latest is also supported if you want new updates ASAP
+image-version: 44 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -28,7 +28,6 @@ modules:
         - mangohud
         - okular
         - openrgb
-        - 7zip # check if build for 44
         - steam
         - unrar
     remove:
