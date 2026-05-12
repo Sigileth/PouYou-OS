@@ -6,14 +6,15 @@
 set -oue pipefail
 
 # Your code goes here.
-echo 'install terra repo'
+echo 'install repos'
 dnf5 -y install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release{,-extras,-mesa}
-echo 'install gamescope from terra repo'
-dnf5 -y install terra-gamescope \
-    ScopeBuddy
-echo 'remove terra repo'
+dnf5 -y copr enable faugus/faugus-launcher
+echo 'install gaming packages'
+dnf5 -y install terra-gamescope ScopeBuddy steam faugus-launcher
+echo 'remove repos'
 dnf5 -y remove \
     terra-gpg-keys \
     terra-release \
     terra-release-extras \
     terra-release-mesa
+dnf5 -y copr disable faugus/faugus-launcher

@@ -13,7 +13,7 @@ modules:
           - cafe.avery.Delfin
           - com.github.wwmm.easyeffects
           - org.dupot.easyflatpak
-          - io.github.Faugus.faugus-launcher
+          #- io.github.Faugus.faugus-launcher
           - com.github.tchx84.Flatseal
           - fr.handbrake.ghb
           - com.heroicgameslauncher.hgl

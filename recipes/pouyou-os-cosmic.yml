@@ -31,7 +31,6 @@ modules:
         - git
         - mangohud
         - openrgb
-        - steam
         - unrar
     remove:
       packages:
@@ -48,15 +47,17 @@ modules:
         - xxd
         - yubikey-manager
 
-  - from-file: addins/branding.yml
   - from-file: addins/virt.yml
   - from-file: addins/flatpaks.yml
 
   - type: script
     scripts:
       - mesa.sh
-      - gamescope.sh
+      - gaming.sh
       - kernel.sh
+      - drivers.sh
+
+  - from-file: addins/branding.yml
         
   - type: initramfs    
 

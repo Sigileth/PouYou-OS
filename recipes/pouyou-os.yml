@@ -23,7 +23,6 @@ modules:
         - mangohud
         - okular
         - openrgb
-        - steam
         - unrar
     remove:
       packages:
@@ -54,7 +53,7 @@ modules:
   - type: script
     scripts:
       - mesa.sh
-      - gamescope.sh
+      - gaming.sh
       - kernel.sh
       - drivers.sh
 
