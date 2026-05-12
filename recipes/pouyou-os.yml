@@ -20,7 +20,6 @@ modules:
         - fastfetch
         - git
         - gwenview
-        - mangohud
         - okular
         - openrgb
         - unrar
