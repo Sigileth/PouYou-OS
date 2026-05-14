@@ -24,9 +24,6 @@ modules:
     remove:
       packages:
         - bazaar
-        - fw-ectool
-        - fw-fanctrl
-        - framework-system
         - gnome-disk-utility
         - kdebugsettings
         - krdc
@@ -37,8 +34,6 @@ modules:
         - pam_yubico
         - pamu2fcfg
         - plasma-workspace-wallpapers
-        - rom-properties
-        - tailscale
         - vim-common
         - vim-data
         - vim-enhanced

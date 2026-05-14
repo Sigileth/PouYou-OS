@@ -20,6 +20,9 @@ modules:
         - fastfetch
         - git
         - gwenview
+        - libbluray
+        - libbluray-utils
+        - makemkv
         - okular
         - openrgb
         - unrar

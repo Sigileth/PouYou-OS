@@ -13,7 +13,6 @@ modules:
           - cafe.avery.Delfin
           - com.github.wwmm.easyeffects
           - org.dupot.easyflatpak
-          #- io.github.Faugus.faugus-launcher
           - com.github.tchx84.Flatseal
           - fr.handbrake.ghb
           - com.heroicgameslauncher.hgl
@@ -34,9 +33,9 @@ modules:
           - net.rpcs3.RPCS3
           - io.github.mfat.sshpilot
           - org.strawberrymusicplayer.strawberry
-          - org.videolan.VLC
           - dev.vencord.Vesktop
           - com.vivaldi.Vivaldi
+          - org.videolan.VLC
           - io.github.flattool.Warehouse
       - notify: false
         scope: user # Also add Flathub user repo, but no user packages
