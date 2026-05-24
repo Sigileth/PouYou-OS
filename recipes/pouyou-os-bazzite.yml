@@ -12,6 +12,8 @@ image-version: stable-44 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - from-file: addins/flatpaks.yml
+
   - type: dnf
     repos:
       nonfree: negativo17
@@ -41,7 +43,6 @@ modules:
         - vim-minimal
         - waydroid
         - webapp-manager
-        - xwiimote-ng
         - xxd
         - yubikey-manager
 
@@ -51,7 +52,6 @@ modules:
       - "rm /etc/profile.d/dnf-dummy.sh" # remove dummy dnf aliases
 
   - from-file: addins/virt.yml
-  - from-file: addins/flatpaks.yml
   - from-file: addins/branding.yml
 
   - type: files
