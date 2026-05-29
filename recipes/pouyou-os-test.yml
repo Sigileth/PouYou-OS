@@ -21,9 +21,11 @@ modules:
   - type: script
     scripts:
       - mesa.sh
-      - gamescope.sh
+      - gaming.sh
       - kernel.sh
       - drivers.sh
+
+  - from-file: addins/branding.yml
 
   - type: files
     files:
@@ -34,8 +36,6 @@ modules:
     files:
       - source: pouyou
         destination: / # copies files/pouyou/* (* means everything inside it) into your image's root folder /
-
-  - from-file: addins/branding.yml
 
   - type: initramfs    
 

@@ -12,12 +12,13 @@ QUALIFIED_KERNEL=$(rpm -q --queryformat '%{VERSION}-%{RELEASE}.%{ARCH}\n' kernel
 echo 'install terra repo'
 dnf5 -y install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release{,-extras,-mesa}
 echo 'install gamescope from terra repo'
-dnf5 -y --setopt=tsflags=noscripts install dkms-zenergy dkms dkms-xone akmod-xpadneo dkms-xpad-noone xone-firmware dkms-new-lg4ff akmods
+dnf5 -y --setopt=tsflags=noscripts install dkms-zenergy dkms dkms-xone dkms-xpadneo dkms-xpad-noone xone-firmware dkms-new-lg4ff
 
-mkdir -p /var/log/akmods
-touch /var/log/akmods/akmods.log
-KVER="$(dnf5 repoquery --installed --qf '%{VERSION}-%{RELEASE}.%{ARCH}' kernel-cachyos)"
-akmods --force --kernels "$KVER"
+# Build akmods modules
+#mkdir -p /var/log/akmods
+#touch /var/log/akmods/akmods.log
+#KVER="$(dnf5 repoquery --installed --qf '%{VERSION}-%{RELEASE}.%{ARCH}' kernel-cachyos)"
+#akmods --force --kernels "$KVER"
 
 # Build all installed DKMS modules for the installed kernel (if any)
 while IFS=' ' read -r pkg_name pkg_ver; do
@@ -31,7 +32,6 @@ while IFS=' ' read -r pkg_name pkg_ver; do
     }
 done < <(rpm -qa --queryformat '%{NAME} %{VERSION}\n' | grep '^dkms-')
 
-#Build initramfs
 # Generate module dependencies
 depmod "$QUALIFIED_KERNEL"
 
