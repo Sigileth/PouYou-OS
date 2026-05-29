@@ -6,9 +6,6 @@ modules:
       with-optional: true
       packages:
         - virtualization
-      exclude:
-        - vim-data
-        - vim-minimal
 
   - type: systemd
     system:
