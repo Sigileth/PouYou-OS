@@ -42,12 +42,6 @@ modules:
         - plasma-drkonqi
         - plasma-welcome
         - plasma-workspace-wallpapers
-        - vim-common
-        - vim-data
-        - vim-enhanced
-        - vim-filesystem
-        - vim-minimal
-        - xxd
         - yubikey-manager
 
   - from-file: addins/virt.yml

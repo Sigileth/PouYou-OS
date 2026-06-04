@@ -6,5 +6,20 @@ modules:
       nonfree: negativo17
     install:
       packages:
-        - mangohud
+        - fastfetch
+        - git
+        - gwenview
+        - libbluray
+        - libbluray-utils
+        - makemkv
+        - okular
         - openrgb
+        - unrar
+    remove:
+      packages:
+        - firefox
+        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - pam-u2f
+        - pam_yubico
+        - pamu2fcfg
+        - yubikey-manager
