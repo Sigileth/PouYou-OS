@@ -3,57 +3,29 @@
 # image will be published to ghcr.io/<user>/<name>
 name: pouyou-os-htpc
 # description will be included in the image's metadata
-description: This is my personal HTPC OS image.
+description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/blue-build/base-images/fedora-kinoite
+base-image: ghcr.io/blue-build/base-images/fedora-base
 image-version: 44 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
   - from-file: addins/flatpaks-HTPC.yml
+  - from-file: addins/plasma.yml
+  - from-file: addins/packages.yml
+  - from-file: addins/branding.yml
 
   - type: files
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - type: dnf
-    install:
-      packages:
-        - gwenview
-        - okular
-
-    remove:
-      packages:
-        # example: removing firefox
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - apr
-        - apr-util
-        - distrobox
-        - firefox
-        - firefox-langpacks
-        - htop
-        - kde-connect
-        - kdebugsettings
-        - krfb
-        - pam-u2f
-        - pam_yubico
-        - pamu2fcfg
-        - plasma-discover
-        - plasma-drkonqi
-        - plasma-welcome
-        - nvtop
-        - vim-common
-        - vim-data
-        - vim-enhanced
-        - vim-filesystem
-        - vim-minimal
-        - xxd
-        - yubikey-manager
-
-  - from-file: addins/branding.yml
+  - type: files
+    files:
+      - source: pouyou
+        destination: / # copies files/pouyou/* (* means everything inside it) into your image's root folder /
 
   - type: initramfs    
 
