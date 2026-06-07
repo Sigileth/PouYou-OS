@@ -34,7 +34,6 @@ modules:
           - io.github.mfat.sshpilot
           - org.strawberrymusicplayer.strawberry
           - dev.vencord.Vesktop
-          - com.vivaldi.Vivaldi
           - org.videolan.VLC
           - io.github.flattool.Warehouse
       - notify: false
