@@ -21,6 +21,7 @@ modules:
         - kmenuedit
         - konsole
         - kscreen
+        - ksshaskpass
         - kwalletmanager5
         - kwin
         - okular
