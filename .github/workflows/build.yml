@@ -38,7 +38,7 @@ jobs:
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
-        uses: blue-build/github-action@v1.11.1
+        uses: blue-build/github-action@v1.12.0
         with:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
@@ -47,3 +47,4 @@ jobs:
 
           # enabled by default, disable if your image is small and you want faster builds
           maximize_build_space: true
+          chunkah: true
