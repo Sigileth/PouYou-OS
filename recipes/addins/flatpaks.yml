@@ -5,14 +5,17 @@ modules:
     configurations:
       - notify: false # Send notification after install/uninstall is finished (true/false)
         scope: system
+        install:
+          - org.dupot.easyflatpak
         # If no repo information is specified, Flathub will be used by default
+      - notify: false
+        scope: user # Also add Flathub user repo, but no user packages
         install: # system flatpaks we want all users to have and not remove
           - eu.betterbird.Betterbird
           - com.usebottles.bottles
           - io.gitlab.guillermop.Counters
           - cafe.avery.Delfin
           - com.github.wwmm.easyeffects
-          - org.dupot.easyflatpak
           - com.github.tchx84.Flatseal
           - fr.handbrake.ghb
           - com.heroicgameslauncher.hgl
@@ -36,5 +39,3 @@ modules:
           - dev.vencord.Vesktop
           - org.videolan.VLC
           - io.github.flattool.Warehouse
-      - notify: false
-        scope: user # Also add Flathub user repo, but no user packages
