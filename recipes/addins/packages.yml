@@ -9,6 +9,7 @@ modules:
         - fastfetch
         - git
         - gwenview
+        - kwooty
         - libbluray
         - libbluray-utils
         - makemkv
