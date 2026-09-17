@@ -19,7 +19,6 @@ modules:
 
   - type: script
     scripts:
-      - mesa.sh
       - gaming.sh
       - kernel.sh
       - drivers.sh

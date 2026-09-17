@@ -10,7 +10,9 @@ echo 'install repos'
 dnf5 -y install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release{,-extras,-mesa}
 dnf5 -y copr enable faugus/faugus-launcher
 echo 'install gaming packages'
-dnf5 -y install terra-gamescope ScopeBuddy steam faugus-launcher mangohud
+dnf5 -y install steam faugus-launcher mangohud
+echo 'install mesa from terra repo'
+dnf5 -y swap --from-repo=terra-mesa mesa-filesystem mesa-filesystem
 echo 'remove repos'
 dnf5 -y remove \
     terra-gpg-keys \
