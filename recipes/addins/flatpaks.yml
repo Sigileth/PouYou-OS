@@ -18,6 +18,7 @@ modules:
           - com.github.wwmm.easyeffects
           - com.github.tchx84.Flatseal
           - fr.handbrake.ghb
+          - io.github.benjamimgois.goverlay
           - com.heroicgameslauncher.hgl
           - org.kde.kcalc
           - org.kde.kmahjongg

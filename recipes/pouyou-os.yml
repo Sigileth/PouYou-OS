@@ -16,6 +16,7 @@ modules:
   - from-file: addins/plasma.yml
   - from-file: addins/packages.yml
   - from-file: addins/virt.yml
+  - from-file: addins/brew.yml
 
   - type: script
     scripts:
