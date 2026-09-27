@@ -21,6 +21,7 @@ modules:
           - com.valvesoftware.Steam
           - org.strawberrymusicplayer.strawberry
           - fun.dragonfly.switchfin
+          - moe.tsuna.tsukimi
           - org.videolan.VLC
       - notify: false
         scope: user # Also add Flathub user repo, but no user packages
