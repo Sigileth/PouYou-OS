@@ -14,12 +14,12 @@ modules:
           - eu.betterbird.Betterbird
           - com.usebottles.bottles
           - io.gitlab.guillermop.Counters
-          - cafe.avery.Delfin
           - com.github.wwmm.easyeffects
           - com.github.tchx84.Flatseal
           - fr.handbrake.ghb
           - io.github.benjamimgois.goverlay
           - com.heroicgameslauncher.hgl
+          - org.jellyfin.JellyfinDesktop
           - org.kde.kcalc
           - org.kde.kmahjongg
           - org.kde.kronometer
@@ -37,6 +37,7 @@ modules:
           - net.rpcs3.RPCS3
           - io.github.mfat.sshpilot
           - org.strawberrymusicplayer.strawberry
+          - fun.dragonfly.switchfin
           - dev.vencord.Vesktop
           - org.videolan.VLC
           - io.github.flattool.Warehouse
