@@ -4,7 +4,6 @@ Base: Kinoite: ghcr.io/blue-build/base-images/fedora-kinoite
 
 Added packages in image: Okular, gwenview, steam, mangohud, git, fastfetch, openrgb and virt-manager.
 Cachy OS kernel and settings
-Mesa from Terra-mesa repo.
 My choice of programs installed as flatpaks.
 
 ## Installation
