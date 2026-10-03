@@ -4,20 +4,11 @@ modules:
   - type: dnf
     repos:
       nonfree: negativo17
-      copr:
-        enable:
-          - faugus/faugus-launcher
     install:
       packages:
         - fastfetch
-        - faugus-launcher
-        - git
-        - kwooty
         - libbluray
         - libbluray-utils
-        - mangohud
-        - makemkv
-        - openrgb
         - steam
         - unrar
     remove:

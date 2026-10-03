@@ -14,7 +14,7 @@ image-version: 44 # latest is also supported if you want new updates ASAP
 modules:
   - from-file: addins/flatpaks-HTPC.yml
   - from-file: addins/plasma.yml
-  - from-file: addins/packages.yml
+  - from-file: addins/packages-HTPC.yml
   - from-file: addins/branding.yml
 
   - type: files
