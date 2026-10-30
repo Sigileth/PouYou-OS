@@ -12,7 +12,6 @@ modules:
         - fastfetch
         - faugus-launcher
         - git
-        - kwooty
         - libbluray
         - libbluray-utils
         - mangohud
