@@ -6,8 +6,8 @@ modules:
       packages:
         - ark
         - bluedevil
-        - bluez
-        - bluez-obexd
+        #- bluez
+        #- bluez-obexd
         - breeze-gtk
         - breeze-icon-theme
         - dolphin
