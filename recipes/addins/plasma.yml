@@ -13,7 +13,7 @@ modules:
         - dolphin
         - gwenview
         - kate
-        - kcm_systemd
+        #- kcm_systemd
         - kdegraphics-thumbnailers
         - kde-gtk-config
         - kde-partitionmanager
